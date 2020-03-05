@@ -1,0 +1,359 @@
+/***-----------------------
+
+Template Name: variety template.
+
+Description: variety related.
+
+Author: Mahamudul Hasan Jony.
+
+Author URL: https://www.facebook.com/profile.php?id=100011563747133.
+
+License: GNU General Public License version 3.0
+
+License URL: http://www.gnu.org/licenses/gpl-3.0.html
+
+version:1.0
+
+------------------------------
+1.	header-area 
+	1.1 menu-area
+	1.2 myself-area
+	1.3 go-area 
+	
+2.  get-area
+	2.1 text-area
+	2.2 col-1-3{column}
+
+3.  hr-area 
+	3.1 hr
+	
+4.  picture-area 
+	4.1 work-area
+		[colam-area]
+	4.2 similarity
+		[similar]
+		
+5.	hr-area
+	5.1 hr
+	
+6.	getin-area
+		[form]
+		
+7. footer-area
+	7.1 icons-area
+	7.2 left-area
+	7.3 right-area
+--------------------------***/
+
+@font-face {
+	font-family:"Myriadpro-bold";
+	src:url('fonts/Myriadpro-bold.woff') format('woff');
+}
+	
+@font-face {
+	font-family:"Myriadpro-regular";
+	src:url('fonts/Myriadpro-regular.woff') format('woff');
+}
+@font-face {
+	font-family:"Myriadpro-cond";
+	src:url('fonts/Myriadpro-cond.woff') format('woff');
+}
+
+body {
+	margin:0;
+}
+.container {
+	width:95%;
+	margin:0 auto;
+	max-width:980px;
+}
+/*******header-area******/
+.header-area {
+	background-image:url('images/city1.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:0 0;
+	color:#ffffff;
+	text-align:center;
+	overflow:hidden;
+	padding:30px 0;
+}
+.header-area .menu-area {
+	font-family:'myriadpro-cond';
+	font-size:20px;
+	
+}
+.menu-area ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-align:right;
+}
+.menu-area ul li {
+	display:inline;
+	margin:0 20px;
+}
+.menu-area ul li a {
+	text-decoration:none;
+	color:#ffffff;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	display:inline-block;
+	border-bottom:1px solid transparent;
+}
+.menu-area ul li a:hover {
+	color:#43bca0;
+	border-bottom:1px solid #ffffff;
+	transition:.5s;
+}
+.menu-area ul .start a {
+	border-bottom:1px solid #ffffff;
+}
+.myself-area {
+	margin-top:100px;
+}
+.myself-area h1 {
+	font-family: 'Rokkitt', serif;
+	font-size:46px;
+	font-weight:normal;
+	margin:0;
+}
+.myself-area hr {
+	width:56%;
+	height:auto;
+	border-top:1.5px solid #ffffff;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+}
+.myself-area h4 {
+	font-family: 'Quicksand', sans-serif;
+	text-transform:capitalize;
+	font-weight:normal;
+	font-size:18px;
+	margin:0;
+	letter-spacing:1px;
+	margin-top:15px;
+	margin-bottom:125px;
+}
+
+.go-area .similar {
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family: 'Rokkitt', serif;
+	background-color:#1abc9c;
+	color:#ffffff;
+	padding:10px 38px;
+	border:5px solid #78d8c5;
+}
+.go-area .similar:hover {
+	background-color:#ffffff;
+	color:#1abc9c;
+	border:1px solid #1abc9c #78d8c5;
+	transition:.5s;
+}
+
+
+
+/*********get-area starts***********/
+.get-area {
+	overflow:hidden;
+	padding-top:80px;
+
+}
+.get-area .text-area h2 {
+	font-family:'myriadpro-bold';
+	font-size:37px;
+	text-transform:uppercase;
+	font-weight:normal;
+	text-align:center;
+	color:#1abc9c;
+	word-spacing:10px;
+}
+.get-area .text-area p {
+	font-family:'myriadpro-regular';
+	font-size:18px;
+	color:#95a5a6;
+	text-align:center;
+	padding:0 0;
+	margin-top:7px;
+	margin-bottom:80px;
+}
+.col-1-3 {
+	text-align:center;
+	margin-top:0px;
+}
+.col-1-3 .column {
+	width:31.33%;
+	float:left;
+	overflow:hidden;
+	margin:0 1%;
+}
+.column p {
+	color:#95a5a6;
+	line-height:1.6em;
+	font-family:'myriadpro-regular';
+	font-size:13px;
+}
+.column p strong {
+	word-spacing:5px;
+	font-weight:normal;
+}
+.col-1-3 h5{
+	font-family:'myriadpro-bold';
+	font-size:20px;
+	color:#1abc9c;
+	text-align:center;
+	font-weight:normal;
+}
+.hr-area {
+	overflow:hidden;
+	padding-top:45px;
+}
+.hr hr {
+	width:94%;
+	border-top:1px solid #e4e8e8;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+}
+
+.picture-area {
+	overflow:hidden;
+	padding:18px 0;
+	text-align:center;
+}
+.work-area .colam-area {
+	width:42%;
+	float:left;
+	margin:4% 4%;
+	overflow:hidden;
+}
+.work-area .colam-area img {
+	width:100%;
+}
+.similarity .similar {
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family: 'Rokkitt', serif;
+	background-color:#1abc9c;
+	color:#ffffff;
+	padding:13px 20px;
+	transition:.5s;
+}
+/*****.similarities {
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family: 'Rokkitt', serif;
+	background-color:#1abc9c;
+	color:#ffffff;
+	padding:13px 15px;
+	font-size:px;
+	position:relative;
+	right:22px;
+}******/
+.similarity .similar:hover {
+	background-color:#ffffff;
+	color:#1abc9c;
+	border:5px solid #1abc9c;
+}
+.similarity i {
+	margin-left:7px;
+}
+
+
+
+/*********getin-area starts***********/
+.getin-area {
+	overflow:hidden;
+	padding:50px 0;
+	text-align:center;
+}
+.getin-area h3 {
+	font-family:'Rokkitt', serif;
+	font-size:35px;
+	color:#1abc9c;
+	font-weight:400;
+	margin-top:10px;
+}
+.getin-area form input {
+	background-color:#e4e8e8;
+	border:none;
+	color:#8395a7;
+	font-family:'Rokkitt', serif;
+	font-size:22px;
+}
+.getin-area form input:last-child {
+	margin-top:20px;
+	padding:30px 13px;
+	width:65%;
+	padding-bottom:100px;
+}
+.getin-area form input[type="text"]:nth-of-type(1) {
+	width:30%;
+	padding:15px 13px;
+}
+.getin-area form input[type="email"]:nth-of-type(2) {
+	width:30%;
+	margin-left:20px;
+	padding:15px 13px;
+}
+
+.social-icons ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-align:center;
+}
+
+.social-icons ul li {
+	display:inline;
+	margin:0 100px;
+}
+.social-icons ul li a {
+	text-decoration:none;
+	background-color:#ffffff;
+	color:#1abc9c;
+	padding:11px 20px;
+	font-size:25px;
+	border:5px solid #78d8c5;
+}
+.social-icons ul li a:hover {
+	background-color:#1abc9c;
+	color:#ffffff;
+	transition:.5s;
+	border:5px solid #ffffff;
+}
+.social-icons {
+	margin-bottom:50px;
+
+}
+
+
+/*****************footer-area starts*******************/
+.footer-area {
+	background-color:#1abc9c;
+	overflow:hidden;
+	padding:70px;
+}
+.footer-area .left-area {
+	width:60%;
+	float:left;
+}
+.left-area p{
+	font-family:'Rokkitt',serif;
+	color:#ffffff;
+	margin-left:100px;
+}
+.footer-area .right-area {
+	width:40%;
+	overflow:hidden;
+	text-align:right;
+}
+.right-area p{
+font-family:'Rokkitt',serif;
+color:#ffffff;
+margin-right:100px;
+}
+
+
